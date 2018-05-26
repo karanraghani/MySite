@@ -1,0 +1,23 @@
+{% extends 'portfolio/base.html' %}
+{% load staticfiles %}
+
+{% block title_block%}
+Projects
+{% endblock %}
+
+{% block body_block %}
+	<div class="container">
+		<article class="projects">
+			<a href="https://karanraghani.pythonanywhere.com/rango/"><h1>Rango</h1></a>
+			<h3>website with categories and links</h3>
+		</article>	
+		<article class="projects">
+			<h1>Vritant</h1>
+			<h3>Simple blog with comments</h3>
+		</article>
+		<article class="projects">
+			<h1>Polling booth</h1>
+			<h3>conducting online polls</h3	>
+		</article>
+	</div>
+{% endblock %}

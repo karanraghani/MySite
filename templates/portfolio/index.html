@@ -1,0 +1,23 @@
+{% extends 'portfolio/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+	Home Page
+{% endblock %}
+
+{% block body_block %}
+	<div class="container">
+		<h1 class="name_header">Karan Raghani</h1>
+
+		<h2 class="about_me">Software Engineer and Consultant with a passion for web technologies,
+		<br /> 
+		looking for new opportunities as a developer</h2>
+
+
+		<a class="about_me_links" href="{{ MEDIA_URL }}karanraghani_resume.pdf">Resume</a> 
+		<a class="about_me_links" href="{% url 'projects' %}">Projects</a> 
+		<a class="about_me_links" href="https://github.com/karanraghani">GitHub</a> 
+		<a class="about_me_links" href="https://www.linkedin.com/in/karanraghani/">LinkedIn</a> 
+		<a class="about_me_links" href="{% url 'contact_me' %}">Contact Me</a> 
+</div>
+{% endblock %}

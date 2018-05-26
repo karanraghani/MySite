@@ -1,0 +1,34 @@
+{% extends 'portfolio/base.html' %}
+{% load staticfiles %}
+	
+{% block title_block%}
+	Contact Me
+{% endblock %}
+
+{% block body_block %}
+	<div class="container contact_me">
+		<article class="column left">
+			<span class="contact_details">
+				<h1>Phone Number</h1>
+				<h3>8884218025</h3>
+			</span>
+			<span class="contact_details">
+				<h1>Email</h1>
+				<h3>karanraghani14@gmail.com</h3>
+			</span>
+			<span class="contact_details">
+				<h1>Twitter</h1>
+				<h3>@karanraghani</h3>
+			</span>
+		</article>
+		<article class="column right">
+			{% if form %}
+			<form method="post" action="{% url 'contact_me' %}">
+				{% csrf_token %}
+				{{ form.as_p }}
+				<input type="submit" name="submit" value="Send">
+			</form>
+			{% endif %}
+		</article>
+	</div>
+{% endblock %}

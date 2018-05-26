@@ -1,0 +1,11 @@
+Name:
+{{name}}
+
+email:
+{{email}}
+
+website:
+{{website}}
+
+text
+{{text|safe|striptags}}
