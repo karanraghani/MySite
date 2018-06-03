@@ -8,12 +8,15 @@
 	</title>
 	<link rel="stylesheet" type="text/css" href="{% static "portfolio/style.css" %}">
 	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<div class = "nav-container">
-  		<a style="float:right" class="active" href="{% url 'home_page' %}">Home</a>
-  	</div>
-	{% block body_block %}
-	{% endblock %}
+	<div class= "base-container">
+		<div class = "nav-container">
+	  		<a style="float:right" class="active" href="{% url 'home_page' %}">Home</a>
+	  	</div>
+		{% block body_block %}
+		{% endblock %}
+	</div>
 </body>	
 </html>

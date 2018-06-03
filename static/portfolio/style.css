@@ -1,11 +1,11 @@
 body{
 	text-align: center;
-	/*background-color: #f35235;*/
 	color: #F8F8FF;
-	/*background: linear-gradient(aqua, white);*/
-	background-image: url("background.jpg");
 	font-family: 'Karla', sans-serif;
-
+}
+.base-container{
+	background: linear-gradient(#279cbf, #deebf1);
+	/*background-image: url("background.jpg");*/
 }
 .container{
 	margin: 12.5%;
