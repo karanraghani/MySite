@@ -10,7 +10,7 @@ body{
 }
 .base-container{
 	background: linear-gradient(#279cbf, #deebf1);
-	/*background-image: url("background.jpg");*/
+	height: 100%;
 }
 .container{
 	padding: 12.5%;
