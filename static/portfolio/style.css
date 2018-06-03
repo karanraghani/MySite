@@ -1,14 +1,19 @@
+html{
+	height: 100%;
+}
 body{
 	text-align: center;
 	color: #F8F8FF;
 	font-family: 'Karla', sans-serif;
+	height: 100%;
+	margin: 0;
 }
 .base-container{
 	background: linear-gradient(#279cbf, #deebf1);
 	/*background-image: url("background.jpg");*/
 }
 .container{
-	margin: 12.5%;
+	padding: 12.5%;
 }
 .about_me{
 	font-size: 24px;
